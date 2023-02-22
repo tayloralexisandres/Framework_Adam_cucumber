@@ -10,13 +10,15 @@ import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.interactions.Actions;
 
+
 public class Demo_step_definitions  {
-DemoPage demoPage =new DemoPage();
+    DemoPage demoPage= new DemoPage();
 ButtonsPAge buttonsPAge=new ButtonsPAge();
 Actions actions=new Actions(Driver.getDriver());
     @Given("Navigate to {string} page")
     public void navigate_to_page(String option) {
         Driver.getDriver().get(ConfigReader.getProperty("env"));
+
         demoPage.options(option);
     }
     @When("Double click on button")

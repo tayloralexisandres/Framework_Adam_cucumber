@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+
 import java.time.Duration;
 
 public class Driver {
@@ -23,7 +24,7 @@ public class Driver {
             switch (browserType) {
                 case "chrome":
                     driver = new ChromeDriver();
-                            driver.manage().window().maximize();
+                    driver.manage().window().maximize();
                     driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
                     break;
                 case "firefox":

@@ -13,6 +13,7 @@ public class ConfigReader {
 try{
     FileInputStream file = new FileInputStream("Configuration.properties");
     properties.load(file);
+    file.close();
 }catch (IOException e){
     e.printStackTrace();
 }
