@@ -12,8 +12,8 @@ import org.junit.runner.RunWith;
         ,
         features = "src/test/resources/features",
         glue = "com/cydeo/step_definitions",
-        dryRun = true,
-        tags = "",
+        dryRun = false,
+        tags = "@buttons",
         publish = true
 
 
